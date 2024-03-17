@@ -61,14 +61,17 @@ public static String hours;
 	
 					 
 		} else {
-			System.out.println("No employee with this ID. Please try again.");
+			System.out.println("Error. No employee with this ID.");
+			System.out.println("-------------Session Ended--------------");
+			break;
 		
-		}
+		} 
 		
 		System.out.println("Would you like to check your salary details? (yes/no)");
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		String userinput = reader.readLine(); //new user input
 		if (userinput.equalsIgnoreCase("Yes")) {
+		
 		view_payslip();
 		sss_deductions();
 		philhealth_deduc();
@@ -413,6 +416,18 @@ public static void calculate_salary () throws ParseException, IOException { /*me
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
